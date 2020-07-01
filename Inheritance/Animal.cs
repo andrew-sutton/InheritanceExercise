@@ -6,13 +6,10 @@ namespace Inheritance
 {
     class Animal
     {
-        public Animal(string name)
+        public Animal(string name,string noise)
         {
             Name = name;
-        }
-        public Animal()
-        {
-
+            Noise = noise;
         }
         public string Name { get; set; }
         public int NumLegs { get; set; }

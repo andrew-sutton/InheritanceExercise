@@ -6,13 +6,11 @@ namespace Inheritance
 {
     class Reptile : Animal
     {
-        public Reptile(string name, bool meateater, string noise, int legs, bool swim)
+        public Reptile(string name, bool meateater, string noise, int legs, bool swim) : base(name, noise)
         {
             LaysEggs = true;
             ColdBlooded = true;
-            Name = name;
             EatsMeat = meateater;
-            Noise = noise;
             NumLegs = legs;
             Swimming = swim;
         }

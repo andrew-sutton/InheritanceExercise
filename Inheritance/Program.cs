@@ -40,6 +40,9 @@ namespace Inheritance
             Console.WriteLine(blueJay.Fly());
             Console.WriteLine(blueJay.Consume("seeds"));
             Console.WriteLine(blueJay.Reproduce());
+            var penguin = new Bird("Penguin", false, "Sqwak!", false);
+            Console.WriteLine("Penguin is trying to fly..");
+            Console.WriteLine(penguin.Fly());
             var rattlesnake = new Reptile("Rattlesnake", true, "hisss!", 0, false);
             Console.WriteLine(rattlesnake.Slither());
             Console.WriteLine(rattlesnake.Sunbathe());
@@ -50,7 +53,7 @@ namespace Inheritance
             Console.WriteLine("Turtle trying to slither...");
             Console.WriteLine(turtle.Slither());
             Console.WriteLine($"The Turtle can swim: {turtle.Swimming}");
-            var squirrel = new Animal("Squirrel");
+            var squirrel = new Animal("Squirrel","Ththttht");
             Console.WriteLine(squirrel.Reproduce());
             
         }

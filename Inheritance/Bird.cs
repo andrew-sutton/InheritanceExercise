@@ -6,14 +6,12 @@ namespace Inheritance
 {
     class Bird : Animal
     {
-        public Bird(string name, bool meateater,string noise,bool flying)
+        public Bird(string name, bool meateater,string noise,bool flying) : base(name, noise)
         {
             NumLegs = 2;
             NumWings = 2;
             LaysEggs = true;
-            Name = name;
             EatsMeat = meateater;
-            Noise = noise;
             CanFly = flying;
         }
         public bool CanFly { get; set; }
